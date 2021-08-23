@@ -1,0 +1,53 @@
+<div class="ui middle aligned center aligned grid" style="margin-top: 20px; margin-bottom:20px">
+
+  <form id="addInventory-form" name="addInventoryForm" class="ui form" method="POST">
+    <h2 class="ui dividing header">Inventory Update</h2>
+    <p>
+      <label for='ProductName'>ProductName:</label>
+      <input type="text" name="productName" id="productName" placeholder="productName" required />
+    </p>
+
+    <p>
+      <label for='productType'>productType:</label>
+        <select name="productType" id="productType" class="ui fluid dropdown" required >
+          <option value="" selected></option>
+          <option value="round">Round</option>
+          <option value="square">Square</option>
+          <option value="triangle">Triangle</option>
+          <option value="rectangle">Rectangle</option>
+        </select>
+    </p>
+
+    <p>
+      <label for='color'>Color:</label>
+      <input type="text" name="color" id="color" placeholder="color" required />
+    </p>
+
+    <p>
+      <label for='manufacturer'>Manufacturer:</label>
+      <input type="text" name="manufacturer" id="manufacturer" placeholder="manufacturer" required />
+    </p>
+    
+    <p>
+      <label for='stock'>Stock</label>
+      <input type="number" name="stock" id="stock" placeholder="stock" required />
+    </p>
+
+    <p>
+      <label for='price'>Price</label>
+      <input type="number" name="price" id="price" placeholder="price" required />
+    </p>
+
+    <p>
+      <label for='productId'>Product ID</label>
+      <input type="text" name="productId" id="productId" placeholder="productId - i.e TL1, TL2" required />
+    </p>
+    
+    <p>
+        {{!-- <a href="/inventory/updateInventory/{{this._id}}" class="ui mini basic teal button">Update</a> --}}
+      <button type="submit" id='submit-inventory' class="ui button">Update</button>
+      <button class="ui button"><a href="/inventory/all">Back</a></button>
+    </p>
+  </form>
+
+</div>

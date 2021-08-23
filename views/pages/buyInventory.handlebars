@@ -1,0 +1,24 @@
+<div class="ui middle aligned center aligned grid" style="margin-top: 20px; margin-bottom:20px">
+  <form id="addinventory-form" name="addInventoryForm" class="ui form" method="POST">
+    <h2 class="ui dividing header">Add Qty to Buy</h2>
+    <p>
+      <label for='qty'>qty:</label>
+      <input type="number" name="qty" id="qty" placeholder="qty" min='1' required />
+    </p>
+    
+    <p>
+      <label for='deliveryDate'>Delivery Date:</label>
+      <input type="date" name="deliveryDate" id="deliveryDate" placeholder="Delivery date" min='1' required />
+    </p>
+
+    {{!-- <div class="field">
+        <label for='releaseDate'>Release Date:</label>
+        <input type="date" name="releaseDate" placeholder="Release Date">
+      </div> --}}
+    <p>
+      <button class="ui button"><a href="/private">Back</a></button>
+      <button type="submit" id='submit-order' class="ui button">Buy</button>
+    </p>
+  </form>
+
+</div>

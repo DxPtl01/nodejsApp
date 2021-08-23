@@ -1,0 +1,44 @@
+<div class="ui middle aligned center aligned grid" style="margin-top: 20px; margin-bottom:20px">
+
+  <form id="signup-form" name="signupForm" class="ui form" method="POST">
+    <h2 class="ui dividing header">PersonalInfo Update</h2>
+    <p>
+      <label>Email:</label>
+      <input type="email" name="email" id="email" placeholder="Email... abc@example.com" required />
+    </p>
+
+    <p>
+      <label for='password'>Password:</label>
+      <input type="password" name="password" id="password" placeholder="Password" required />
+    </p>
+
+    <div class="two fields">
+      <div class="field">
+        <label for='firstname'>First Name:</label>
+        <input type="text" name="firstname" id ="firstName" placeholder="First Name" required />
+      </div>
+      <div class="field">
+        <label for='lastname'>Last Name:</label>
+        <input type="text" name="lastname" id ="lastName" placeholder="Last Name" required />
+      </div>
+    </div>
+    <p>
+      <label>UserRole</label>
+      <select name="userRole" id="userRole" class="ui fluid dropdown" required />
+        <option value="" selected></option>
+        <option value="owner">Owner</option>
+        <option value="manager">Manager</option>
+        <option value="seller">Seller</option>
+      </select>
+    </p>
+    <p>
+      <label for='address'>Address:</label>
+      <input type="text" name="address" id="address" placeholder="Address" required />
+    </p>
+    <p>
+      <button class="ui button"><a href="/private">Back</a></button>
+      <button type="submit" id='update-user' class="ui button">Update</button>
+    </p>
+  </form>
+
+</div>

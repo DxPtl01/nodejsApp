@@ -1,0 +1,34 @@
+<div class="ui container">
+    <h1>Personal Info</h1>
+   
+    <table class="ui horizon celled table">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>User Role</th>
+                <th>Address</th>
+                <th>User Operation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Name">{{user.email}}</td>
+                <td data-label="Name">{{user.firstName}}</td>
+                <td data-label="Name">{{user.lastName}}</td>
+                <td data-label="Name">{{user.userRole}}</td>
+                <td data-label="Name">{{user.address}}</td>
+                <td>
+                    <a href="/userUpdate" class="ui mini basic teal button">Update</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
