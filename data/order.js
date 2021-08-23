@@ -2,7 +2,7 @@ const mongoCollections = require("../config/mongoCollection");
 const user = mongoCollections.user;
 const inventory = mongoCollections.inventory;
 const order = mongoCollections.order;
-const user = mongoCollections.user;
+
 
 const rentGameData = mongoCollections.game_rent;
 const sellGameData = mongoCollections.game_sell;
